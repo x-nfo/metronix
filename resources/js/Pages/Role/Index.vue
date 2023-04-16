@@ -221,7 +221,9 @@ onUnmounted(() => {
                     </DangerButton>
 
                     <PrimaryButton
-                        v-show="can(['create role'])"
+                        v-show="
+                            data.selectedId.length == 0 && can(['create role'])
+                        "
                         class="rounded-none"
                         @click="openModal('create')"
                     >
@@ -305,9 +307,13 @@ onUnmounted(() => {
                                 {{ role.guard_name }}
                             </td>
                             <td
-  
-                                v-if="role.permissions.length == props.permissions.length"
-                                @click="openModal('permission'), (data.role =role)"
+                                v-if="
+                                    role.permissions.length ==
+                                    props.permissions.length
+                                "
+                                @click="
+                                    openModal('permission'), (data.role = role)
+                                "
                                 class="cursor-pointer text-primary fw-semibold"
                             >
                                 <span
@@ -319,11 +325,12 @@ onUnmounted(() => {
                                 >
                                     {{ lang().label.all_permission }}</span
                                 >
-                         </td>
+                            </td>
                             <td
-        
                                 v-else-if="role.permissions.length != 0"
-                                @click="openModal('permission'), (data.role = role)"
+                                @click="
+                                    openModal('permission'), (data.role = role)
+                                "
                                 class="cursor-pointer text-primary fw-semibold"
                             >
                                 <span
@@ -335,7 +342,6 @@ onUnmounted(() => {
                                     >{{ role.permissions.length }}
                                     {{ lang().label.permission }}
                                 </span>
-
                             </td>
                             <td v-else>
                                 {{ lang().label.no_permission }}

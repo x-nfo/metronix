@@ -203,7 +203,10 @@ onUnmounted(() => {
                     </DangerButton>
 
                     <PrimaryButton
-                        v-show="can(['create permission'])"
+                        v-show="
+                            data.selectedId.length == 0 &&
+                            can(['create permission'])
+                        "
                         class="rounded-none"
                         @click="openModal('create')"
                     >

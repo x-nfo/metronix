@@ -203,7 +203,9 @@ onUnmounted(() => {
                     </DangerButton>
 
                     <PrimaryButton
-                        v-show="can(['create user'])"
+                        v-show="
+                            data.selectedId.length == 0 && can(['create user'])
+                        "
                         @click="openModal('create')"
                     >
                         <i class="fa-thin fa-plus"></i>
