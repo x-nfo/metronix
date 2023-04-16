@@ -1,4 +1,8 @@
 {
+  "AuthenticatedLayout.css": {
+    "file": "assets/AuthenticatedLayout-152666c9.css",
+    "src": "AuthenticatedLayout.css"
+  },
   "_AuntheticationIllustration-deed7cb4.js": {
     "file": "assets/AuntheticationIllustration-deed7cb4.js",
     "imports": [
@@ -6,13 +10,24 @@
       "_vendor-8a5f3a62.js"
     ]
   },
-  "_AuthenticatedLayout-171eab4f.js": {
+  "_AuthenticatedLayout-59967d73.js": {
     "assets": [
       "assets/default-small-0809cb30.svg",
       "assets/300-1-3dcc4c57.jpg",
-      "assets/default-dark-df43b22e.svg"
+      "assets/default-dark-df43b22e.svg",
+      "assets/fa-brands-400-f4617423.woff2",
+      "assets/fa-brands-400-2ef6fdde.ttf",
+      "assets/fa-regular-400-7ba24c41.woff2",
+      "assets/fa-regular-400-12dea17b.ttf",
+      "assets/fa-solid-900-e2c5cf54.woff2",
+      "assets/fa-solid-900-67a880b4.ttf",
+      "assets/fa-v4compatibility-7c377405.woff2",
+      "assets/fa-v4compatibility-8d9500e8.ttf"
     ],
-    "file": "assets/AuthenticatedLayout-171eab4f.js",
+    "css": [
+      "assets/AuthenticatedLayout-152666c9.css"
+    ],
+    "file": "assets/AuthenticatedLayout-59967d73.js",
     "imports": [
       "_vendor-8a5f3a62.js",
       "_SwitchLangNavbar-67ae8192.js"
@@ -78,6 +93,38 @@
   },
   "_vendor-8a5f3a62.js": {
     "file": "assets/vendor-8a5f3a62.js"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf": {
+    "file": "assets/fa-brands-400-2ef6fdde.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-f4617423.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf": {
+    "file": "assets/fa-regular-400-12dea17b.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-7ba24c41.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf": {
+    "file": "assets/fa-solid-900-67a880b4.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-e2c5cf54.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf": {
+    "file": "assets/fa-v4compatibility-8d9500e8.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2": {
+    "file": "assets/fa-v4compatibility-7c377405.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
   },
   "resources/js/Pages/Auth/ConfirmPassword.vue": {
     "file": "assets/ConfirmPassword-ffb041cf.js",
@@ -152,9 +199,9 @@
     "src": "resources/js/Pages/Auth/VerifyEmail.vue"
   },
   "resources/js/Pages/Dashboard.vue": {
-    "file": "assets/Dashboard-fa7fc076.js",
+    "file": "assets/Dashboard-846c642e.js",
     "imports": [
-      "_AuthenticatedLayout-171eab4f.js",
+      "_AuthenticatedLayout-59967d73.js",
       "_Card-31894d03.js",
       "_vendor-8a5f3a62.js",
       "_SwitchLangNavbar-67ae8192.js"
@@ -205,11 +252,11 @@
     "src": "resources/js/Pages/Permission/Edit.vue"
   },
   "resources/js/Pages/Permission/Index.vue": {
-    "file": "assets/Index-c4932fd2.js",
+    "file": "assets/Index-8abb8920.js",
     "imports": [
       "_vendor-8a5f3a62.js",
       "_InputSearch-bfe4cdde.js",
-      "_AuthenticatedLayout-171eab4f.js",
+      "_AuthenticatedLayout-59967d73.js",
       "_PrimaryButton-12788682.js",
       "_SelectInput-d84ecef5.js",
       "_DangerButton-5bdc9eaa.js",
@@ -227,9 +274,9 @@
     "src": "resources/js/Pages/Permission/Index.vue"
   },
   "resources/js/Pages/Profile/Edit.vue": {
-    "file": "assets/Edit-e76732a6.js",
+    "file": "assets/Edit-456730a7.js",
     "imports": [
-      "_AuthenticatedLayout-171eab4f.js",
+      "_AuthenticatedLayout-59967d73.js",
       "resources/js/Pages/Profile/Partials/DeleteUserForm.vue",
       "resources/js/Pages/Profile/Partials/UpdatePasswordForm.vue",
       "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.vue",
@@ -319,11 +366,11 @@
     "src": "resources/js/Pages/Role/Edit.vue"
   },
   "resources/js/Pages/Role/Index.vue": {
-    "file": "assets/Index-81a64930.js",
+    "file": "assets/Index-4420acf1.js",
     "imports": [
       "_vendor-8a5f3a62.js",
       "_InputSearch-bfe4cdde.js",
-      "_AuthenticatedLayout-171eab4f.js",
+      "_AuthenticatedLayout-59967d73.js",
       "_PrimaryButton-12788682.js",
       "_SelectInput-d84ecef5.js",
       "_DangerButton-5bdc9eaa.js",
@@ -395,11 +442,11 @@
     "src": "resources/js/Pages/User/Edit.vue"
   },
   "resources/js/Pages/User/Index.vue": {
-    "file": "assets/Index-6b1991e7.js",
+    "file": "assets/Index-924b8ead.js",
     "imports": [
       "_vendor-8a5f3a62.js",
       "_InputSearch-bfe4cdde.js",
-      "_AuthenticatedLayout-171eab4f.js",
+      "_AuthenticatedLayout-59967d73.js",
       "_PrimaryButton-12788682.js",
       "_SelectInput-d84ecef5.js",
       "_DangerButton-5bdc9eaa.js",
@@ -456,7 +503,7 @@
       "resources/js/Pages/User/Index.vue",
       "resources/js/Pages/Welcome.vue"
     ],
-    "file": "assets/app-fe561c59.js",
+    "file": "assets/app-2816aca7.js",
     "imports": [
       "_vendor-8a5f3a62.js"
     ],
