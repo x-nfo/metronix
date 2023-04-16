@@ -6,6 +6,7 @@ import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import { usePage } from '@inertiajs/vue3';
+
 const appName =
     window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
@@ -22,15 +23,15 @@ createInertiaApp({
             .use(ZiggyVue, Ziggy)
             .mixin({
                 methods: {
-                    can: function(permissions) {
+                    can: function (permissions) {
                         var allPermissions = this.$page.props.auth.can;
                         var hasPermission = false;
-                        permissions.forEach(function(item) {
+                        permissions.forEach(function (item) {
                             if (allPermissions[item]) hasPermission = true;
                         });
                         return hasPermission;
                     },
-                    lang: function() {
+                    lang: function () {
                         return usePage().props.language.original;
                     },
                 },

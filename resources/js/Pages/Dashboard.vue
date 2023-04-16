@@ -22,7 +22,7 @@ const props = defineProps({
                     mainClasses="card-flush bgi-no-repeat bgi-size-contain bgi-position-x-end "
                     style="
                         background-color: #f1416c;
-                        background-image: url('media/patterns/vector-1.png');
+                        background-image: url('/images/patterns/vector-1.png');
                     "
                 >
                     <template #title>

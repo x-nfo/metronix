@@ -54,7 +54,7 @@ onMounted(() => {
                 <a href="?page=index" class="d-lg-none">
                     <img
                         alt="Logo"
-                        src="media/logos/default-small.svg"
+                        src="@/images/logos/default-small.svg"
                         class="h-30px"
                     />
                 </a>

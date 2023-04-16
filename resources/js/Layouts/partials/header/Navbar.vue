@@ -25,7 +25,7 @@ onMounted(() => {
                 data-kt-menu-attach="parent"
                 data-kt-menu-placement="bottom-end"
             >
-                <img src="media/avatars/300-1.jpg" alt="user" />
+                <img src="@/images/avatars/300-1.jpg" alt="user" />
             </div>
             <!--layout-partial:partials/menus/_user-account-menu.html-->
             <!--end::Menu wrapper-->

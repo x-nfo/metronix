@@ -23,8 +23,8 @@ const lang = usePage().props.locale;
                 <img
                     data-kt-element="current-lang-flag"
                     class="w-20px h-20px rounded me-3"
-                    src="/media/flags/united-states.svg"
-                    alt=""
+                    src="@/images/flags/united-states.svg"
+                    alt="English"
                 />
 
                 <span data-kt-element="current-lang-name" class="me-1"
@@ -35,8 +35,9 @@ const lang = usePage().props.locale;
                 <img
                     data-kt-element="current-lang-flag"
                     class="w-20px h-20px rounded me-3"
-                    src="/media/flags/indonesia.svg"
-                    alt=""
+                    src="@/images/flags/indonesia.svg"
+                    alt="Indonesia"
+                    loading="lazy"
                 />
 
                 <span data-kt-element="current-lang-name" class="me-1"
@@ -79,8 +80,9 @@ const lang = usePage().props.locale;
                         <img
                             data-kt-element="lang-flag"
                             class="rounded-1"
-                            src="/media/flags/united-states.svg"
-                            alt=""
+                            src="@/images/flags/united-states.svg"
+                            alt="English"
+                            loading="lazy"
                         />
                     </span>
                     <span data-kt-element="lang-name">English</span>
@@ -98,8 +100,9 @@ const lang = usePage().props.locale;
                         <img
                             data-kt-element="lang-flag"
                             class="rounded-1"
-                            src="/media/flags/indonesia.svg"
-                            alt=""
+                            src="@/images/flags/indonesia.svg"
+                            alt="indonesia"
+                            loading="lazy"
                         />
                     </span>
                     <span data-kt-element="lang-name">Indonesia</span>

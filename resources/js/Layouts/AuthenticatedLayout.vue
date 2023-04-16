@@ -13,7 +13,6 @@ onMounted(() => {
     KTThemeMode.init();
 });
 
-
 watchEffect(() => {
     let flash = usePage().props.flash;
 
@@ -43,7 +42,6 @@ watchEffect(() => {
         });
     }
 });
-
 </script>
 
 <template>

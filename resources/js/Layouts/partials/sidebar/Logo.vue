@@ -6,13 +6,15 @@
         <a href="?page=index">
             <img
                 alt="Logo"
-                src="media/logos/default-dark.svg"
+                src="@/images/logos/default-dark.svg"
                 class="h-25px app-sidebar-logo-default"
+                loading="lazy"
             />
             <img
                 alt="Logo"
-                src="media/logos/default-small.svg"
+                src="@/images/logos/default-small.svg"
                 class="h-20px app-sidebar-logo-minimize"
+                loading="lazy"
             />
         </a>
         <!--end::Logo image-->

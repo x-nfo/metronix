@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
     <head>
+        <link rel="icon" type="image/svg+xml" href="{{asset('favicon.svg')}}">
+        <link rel="icon" type="image/ico" href="{{asset('favicon.ico')}}">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/svg+xml" href="{{ Vite::asset('favicon.svg') }}">
-        <link rel="icon" type="image/ico" href="{{ Vite::asset('favicon.ico') }}">
 
         <title inertia>{{ config('app.name', 'Inertia Metronix') }}</title>
 
@@ -13,9 +13,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-          <!-- Metronic -->
-        <link href="{{Vite::asset('plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{Vite::asset('css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
+       <link rel="stylesheet" href="{{asset('css/style.bundle.css')}}">
+       <link rel="stylesheet" href="{{asset('css/plugins.bundle.css')}}">
         <!-- Scripts -->
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
@@ -58,17 +57,12 @@
             document.documentElement.setAttribute("data-bs-theme", themeMode);
         }
         </script>
-        <!--end::Theme mode setup on page load-->
-
-
 
        @inertia
 
-       <!--end::Loading markup-->
-        <script src="{{Vite::asset('plugins/global/plugins.bundle.js')}}"></script>
-        <script src="{{Vite::asset('js/scripts.bundle.js')}}"></script>
-        <script src="{{Vite::asset('js/widgets.bundle.js')}}"></script>
-		
+       <script src="{{asset('js/plugins.bundle.js')}}"></script>
+       <script src="{{asset('js/scripts.bundle.js')}}"></script>
+       <script src="{{asset('js/widgets.bundle.js')}}"></script>
 
     </body>
 </html>
