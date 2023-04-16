@@ -9,6 +9,8 @@
   <img alt="Permission" src="https://i.postimg.cc/mrxQg38v/image.png" width="45%">
   <img alt="Modal Form" src="https://i.postimg.cc/vTxTpkfC/Screenshot-2023-03-20-at-18-22-08-User-Inertia-Metronix.png" width="45%">&nbsp;
   <img alt="Modal Confirm" src="https://i.postimg.cc/brrkdmbR/Screenshot-2023-03-20-at-18-21-04-User-Inertia-Metronix.png" width="45%">
+  <img alt="SweetAlert Notification" src="https://i.postimg.cc/SKw78Hkw/swnotification.png" width="45%">
+  <img alt="Bootstrap Tooltip" src="https://i.postimg.cc/c4Bg0CCK/tooltip.png" width="45%">
   
 </p>
 
@@ -19,6 +21,8 @@
 -   Modal Form
 -   Bulk Action
 -   Light/Dark Mode
+-   Bootstrap Tooltip
+-   SweetAlert2 Notification
 -   Rich Feature Datatable Serverside
 -   Localization (EN/ID)
 -   SSR (Server Side Rendering)
