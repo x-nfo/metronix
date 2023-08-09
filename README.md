@@ -53,6 +53,12 @@ DB_DATABASE=metronix
 DB_USERNAME=root
 DB_PASSWORD=
 
+* Add Your Metronic CSS & JS files into Public directory
+/public/css/style.bundle.css
+/public/js/custom
+/public/js/script.bundle.js
+/public/js/widgets.bundle.js
+
 php artisan migrate:fresh --seed
 
 START THE SERVER
