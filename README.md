@@ -33,6 +33,7 @@
 -   Composer
 -   Mysql
 -   Apache
+-   Metronic V8.1.6 (CSS, JS)
 
 # Installation
 
