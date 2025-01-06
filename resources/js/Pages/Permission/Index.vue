@@ -59,9 +59,7 @@ onMounted(() => {
     data.modal_delete_bulk = useModal('#modal_delete_bulk');
 });
 
-onUpdated(() => {
-    KTMenu.init();
-});
+optimize KTMenu initialization using watch with nextTick
 
 const order = (field) => {
     data.params.field = field;
