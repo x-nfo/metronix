@@ -73,10 +73,7 @@ watch(
     { deep: true }
 )
 
-const order = (field) => {
-    data.params.field = field;
-    data.params.order = data.params.order === 'asc' ? 'desc' : 'asc';
-};
+
 
 watch(
     () => _.cloneDeep(data.params),
@@ -90,70 +87,57 @@ watch(
     }, 150)
 );
 
+// Sorting function
+const order = (field) => {
+    data.params.field = field
+    data.params.order = data.params.order === "asc" ? "desc" : "asc"
+}
+
+// Select all users
 const selectAll = (event) => {
-    if (event.target.checked === false) {
-        data.selectedId = [];
+    if (!event.target.checked) {
+        data.selectedId = []
     } else {
-        props.users?.data.forEach((user) => {
-            data.selectedId.push(user.id);
-        });
+        data.selectedId = props.users?.data.map((user) => user.id) || []
     }
-};
+}
+
+// Check if all users are selected
 const select = () => {
-    if (props.users?.data.length == data.selectedId.length) {
-        data.multipleSelect = true;
-    } else {
-        data.multipleSelect = false;
-    }
-};
+    data.multipleSelect = props.users?.data.length === data.selectedId.length
+}
 
+// Open a modal
 const openModal = (id) => {
-    switch (id) {
-        case 'create':
-            data.modal_create.show();
-            data.createOpen = true;
-            break;
-        case 'edit':
-            data.modal_edit.show();
-            data.editOpen = true;
-            break;
-        case 'delete':
-            data.modal_delete.show();
-            data.deleteOpen = true;
-            break;
-        case 'deleteBulk':
-            data.modal_delete_bulk.show();
-            data.deleteBulkOpen = true;
-            break;
+    if (data.modals[id]) {
+        data.modals[id].show()
+        data.modalStates[`${id}Open`] = true
     }
-};
+}
 
+// Close a modal
 const closeModal = (id) => {
-    switch (id) {
-        case 'create':
-            data.modal_create.hide();
-            data.createOpen = false;
-            break;
-        case 'edit':
-            data.modal_edit.hide();
-            data.editOpen = false;
-            break;
-        case 'delete':
-            data.modal_delete.hide();
-            data.deleteOpen = false;
-            break;
-        case 'deleteBulk':
-            data.modal_delete_bulk.hide();
-            data.deleteBulkOpen = false;
-            data.multipleSelect = false;
-            data.selectedId = [];
-            break;
-    }
-};
+    if (data.modals[id]) {
+        data.modals[id].hide()
+        data.modalStates[`${id}Open`] = false
 
+        // Reset state for bulk delete modal
+        if (id === "deleteBulk") {
+            data.multipleSelect = false
+            data.selectedId = []
+        }
+    }
+}
+
+// Unmount lifecycle
 onUnmounted(() => {
-    closeModal();
-});
+    // Explicitly close all modals
+    Object.keys(data.modals).forEach((key) => {
+        if (data.modals[key]) {
+            data.modals[key].hide()
+        }
+    })
+})
 </script>
 
 <template>
