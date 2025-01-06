@@ -57,9 +57,21 @@ onMounted(() => {
     data.modal_delete_bulk = useModal('#modal_delete_bulk');
 });
 
-onUpdated(() => {
-    KTMenu.init();
-});
+watch(
+    () => data.params,
+    (newValue, oldValue) => {
+        if (
+            newValue.field !== oldValue.field ||
+            newValue.order !== oldValue.order
+        ) {
+            console.log("Field atau Order berubah:", newValue)
+            nextTick(() => {
+                KTMenu.init()
+            })
+        }
+    },
+    { deep: true }
+)
 
 const order = (field) => {
     data.params.field = field;
